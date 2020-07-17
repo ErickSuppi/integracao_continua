@@ -12,3 +12,9 @@ test('Testando se o objeto cliente tem a propriedade cpf', () => {
     expect(cliente.validarCPF(cliente.cpf)).toBe(true);
 });
 
+test('Testando cpf undefined', () => {
+    let cliente = new Cliente()
+    cliente.cpf = undefined
+    expect(cliente.validarCPF(cliente.cpf)).toBe(false);
+});
+

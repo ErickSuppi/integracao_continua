@@ -4,6 +4,7 @@ class Cliente {
     this.cpf = cpf;
   }
   validarCPF() {
+    if(!this.cpf) return false
     let strCPF = this.cpf.replace(/\.|\-/g, "")
     var soma;
     var resto;
